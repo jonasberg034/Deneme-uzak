@@ -19,6 +19,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
+  storageClassName: ""
   hostPath:
     path: /mnt/data/mysql
 ---
@@ -32,6 +33,7 @@ spec:
   resources:
     requests:
       storage: 10Gi
+  storageClassName: ""
 ---
 apiVersion: apps/v1
 kind: Deployment
