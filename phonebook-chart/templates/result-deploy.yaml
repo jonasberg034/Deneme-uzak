@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: resultserver
-        image: j{{ .Values.resultserver.image }}
+        image: {{ .Values.resultserver.image }}
         ports:
         - containerPort: 80
         env:
