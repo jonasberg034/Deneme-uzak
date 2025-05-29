@@ -25,6 +25,7 @@ spec:
       containers:
       - name: resultserver
         image: {{ .Values.resultserver.image }}
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
         env:
